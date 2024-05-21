@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.sass';
-import Background from './assets/back.mp4'
 
 function App() {
   const [randomNumber, setRandomNumber] = useState(10.50); // Начальное значение
@@ -54,7 +53,6 @@ function App() {
           ПОЛУЧИТЬ СИГНАЛ
         </button>
       </div>
-      <video className='background' src={Background} muted autoPlay loop playsInline></video>
     </div>
   );
 }
