@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/luckyjet/static/css/main.be96269e.css",
-    "main.js": "/luckyjet/static/js/main.06bfe6e1.js",
+    "main.css": "/luckyjet/static/css/main.690038b4.css",
+    "main.js": "/luckyjet/static/js/main.e9d52d9e.js",
     "static/media/back.gif": "/luckyjet/static/media/back.2f1cc3376c072e645186.gif",
     "index.html": "/luckyjet/index.html",
-    "main.be96269e.css.map": "/luckyjet/static/css/main.be96269e.css.map",
-    "main.06bfe6e1.js.map": "/luckyjet/static/js/main.06bfe6e1.js.map"
+    "main.690038b4.css.map": "/luckyjet/static/css/main.690038b4.css.map",
+    "main.e9d52d9e.js.map": "/luckyjet/static/js/main.e9d52d9e.js.map"
   },
   "entrypoints": [
-    "static/css/main.be96269e.css",
-    "static/js/main.06bfe6e1.js"
+    "static/css/main.690038b4.css",
+    "static/js/main.e9d52d9e.js"
   ]
 }

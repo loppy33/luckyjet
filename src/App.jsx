@@ -15,7 +15,7 @@ function App() {
     const chanceRandom = Math.random();
 
     let min, max;
-    // Если случайное число для шанса меньше 0.5, то шанс для меньшего "X" будет больше
+    // Если случайное число для шанса меньше 0.7, то шанс для меньшего "X" будет больше
     if (chanceRandom < 0.7) {
       min = 1.01;
       max = 5.00;
@@ -28,7 +28,7 @@ function App() {
     setRandomNumber(parseFloat(random));
 
     // Рассчитываем скорость анимации
-    const speed = 100 / random; // Чем больше число, тем быстрее скорость
+    const speed = 10; // Базовая скорость анимации в миллисекундах
 
     // Запуск анимации
     let currentNumber = 1.01;
@@ -38,10 +38,21 @@ function App() {
         setDisplayNumber(parseFloat(random));
         setIsAnimating(false); // Анимация завершилась, устанавливаем флаг обратно
       } else {
-        currentNumber = (parseFloat(currentNumber) + 0.01).toFixed(2);
+        let increment;
+        if (currentNumber < 5) {
+          increment = 0.01;
+        } else if (currentNumber < 20) {
+          increment = 0.05;
+        } else if (currentNumber < 50) {
+          increment = 0.1;
+        } else {
+          increment = 0.5;
+        }
+
+        currentNumber = (parseFloat(currentNumber) + increment).toFixed(2);
         setDisplayNumber(parseFloat(currentNumber));
       }
-    }, speed); // Скорость анимации зависит от случайного числа
+    }, speed); // Скорость анимации постоянная
   };
 
   return (
