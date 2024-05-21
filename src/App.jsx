@@ -37,7 +37,7 @@ function App() {
     <div className="App">
       <div className="container">
         <h1>LUCKY JET | СОФТ</h1>
-        <span className="random-number">{`X${displayNumber.toFixed(2)}`}</span>
+        <span className="random-number">{`x${displayNumber.toFixed(2)}`}</span>
         <button onClick={generateRandomNumber} disabled={isAnimating}>
           ПОЛУЧИТЬ СИГНАЛ
         </button>
