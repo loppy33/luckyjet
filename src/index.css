@@ -11,13 +11,21 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url('./assets/back.gif');
-  background-position: top;
-  backdrop-filter: blur(2px);
+  background: url('./assets/backgr.png');
+  background-position: left;
+  background-size: 100%;
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html, body{  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
