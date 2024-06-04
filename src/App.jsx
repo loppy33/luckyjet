@@ -4,7 +4,6 @@ import Video from "./assets/video.MP4";
 import icon from "./assets/icon.png";
 
 import LoadImage from "./assets/loading.svg";
-import { wait } from '@testing-library/user-event/dist/utils';
 
 const delay = seconds => new Promise(res => setTimeout(res, 1000 * seconds));
 
@@ -75,7 +74,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <h3><img src={icon} alt="" /> @gorillascash</h3>
+        <h3><img src={icon} alt="" /> gorilla_dzhiev</h3>
         <h2><span>LUCKY</span> JET</h2>
 
         <div className="gameContainer">
